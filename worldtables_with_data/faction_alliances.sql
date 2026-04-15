@@ -1,0 +1,161 @@
+-- Table: `faction_alliances`
+USE `eq2emu`;
+SET FOREIGN_KEY_CHECKS=0;
+
+/*M!999999\- enable the sandbox mode */ 
+-- MariaDB dump 10.19  Distrib 10.11.14-MariaDB, for debian-linux-gnu (x86_64)
+--
+-- Host: localhost    Database: eq2emu
+-- ------------------------------------------------------
+-- Server version	10.11.14-MariaDB-0+deb12u2
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `faction_alliances`
+--
+
+DROP TABLE IF EXISTS `faction_alliances`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8mb4 */;
+CREATE TABLE `faction_alliances` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `faction_id` int(10) unsigned NOT NULL DEFAULT 0,
+  `friend_faction` int(10) unsigned NOT NULL DEFAULT 0,
+  `hostile_faction` int(10) unsigned NOT NULL DEFAULT 0,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `FactionIDX` (`faction_id`,`friend_faction`,`hostile_faction`),
+  CONSTRAINT `FK_faction_alliances` FOREIGN KEY (`faction_id`) REFERENCES `factions` (`id`) ON UPDATE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=89 DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2025-09-27  0:00:05
+
+/*M!999999\- enable the sandbox mode */ 
+-- MariaDB dump 10.19  Distrib 10.11.14-MariaDB, for debian-linux-gnu (x86_64)
+--
+-- Host: localhost    Database: eq2emu
+-- ------------------------------------------------------
+-- Server version	10.11.14-MariaDB-0+deb12u2
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Dumping data for table `faction_alliances`
+--
+
+LOCK TABLES `faction_alliances` WRITE;
+/*!40000 ALTER TABLE `faction_alliances` DISABLE KEYS */;
+INSERT INTO `faction_alliances` VALUES
+(61,11,0,1),
+(1,11,0,12),
+(39,11,0,102),
+(64,11,0,122),
+(66,12,0,1),
+(2,12,0,11),
+(75,12,0,120),
+(76,12,0,121),
+(79,12,0,362),
+(80,12,0,363),
+(81,12,0,364),
+(77,12,0,366),
+(78,12,0,367),
+(3,21,0,22),
+(21,34,0,1),
+(41,34,0,5),
+(26,34,0,35),
+(23,34,0,36),
+(25,34,0,354),
+(62,44,0,1),
+(63,44,0,12),
+(40,102,0,35),
+(15,102,0,116),
+(18,102,0,120),
+(36,104,0,103),
+(37,104,0,136),
+(34,104,102,0),
+(35,104,105,0),
+(32,105,0,103),
+(33,105,0,155),
+(30,105,101,0),
+(29,105,102,0),
+(31,105,104,0),
+(16,116,0,102),
+(14,116,0,117),
+(17,120,0,102),
+(65,122,0,11),
+(43,122,0,111),
+(42,122,0,117),
+(27,125,0,139),
+(28,139,0,125),
+(73,145,1,0),
+(57,214,0,1),
+(56,214,0,12),
+(19,214,0,33),
+(59,214,0,359),
+(58,214,0,361),
+(55,214,11,0),
+(60,214,16,0),
+(12,250,0,144),
+(13,250,143,0),
+(9,288,0,289),
+(24,354,0,34),
+(48,357,0,35),
+(51,357,0,36),
+(50,357,0,44),
+(49,357,0,358),
+(44,357,356,0),
+(47,358,0,356),
+(46,358,0,357),
+(52,359,0,360),
+(53,361,0,359),
+(54,361,0,360),
+(67,362,0,363),
+(68,362,0,364),
+(69,363,0,362),
+(70,363,0,364),
+(71,364,0,362),
+(72,364,0,363),
+(82,366,0,11),
+(83,366,0,12),
+(74,367,0,12);
+/*!40000 ALTER TABLE `faction_alliances` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2025-09-27  0:00:05
+
+SET FOREIGN_KEY_CHECKS=1;

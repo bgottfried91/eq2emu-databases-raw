@@ -1,0 +1,182 @@
+-- Table: `spell_ts_ability_index`
+USE `eq2emu`;
+SET FOREIGN_KEY_CHECKS=0;
+
+/*M!999999\- enable the sandbox mode */ 
+-- MariaDB dump 10.19  Distrib 10.11.14-MariaDB, for debian-linux-gnu (x86_64)
+--
+-- Host: localhost    Database: eq2emu
+-- ------------------------------------------------------
+-- Server version	10.11.14-MariaDB-0+deb12u2
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `spell_ts_ability_index`
+--
+
+DROP TABLE IF EXISTS `spell_ts_ability_index`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8mb4 */;
+CREATE TABLE `spell_ts_ability_index` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `spell_id` int(10) unsigned NOT NULL,
+  `index` int(10) unsigned NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=97 DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2025-09-27  0:00:50
+
+/*M!999999\- enable the sandbox mode */ 
+-- MariaDB dump 10.19  Distrib 10.11.14-MariaDB, for debian-linux-gnu (x86_64)
+--
+-- Host: localhost    Database: eq2emu
+-- ------------------------------------------------------
+-- Server version	10.11.14-MariaDB-0+deb12u2
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Dumping data for table `spell_ts_ability_index`
+--
+
+LOCK TABLES `spell_ts_ability_index` WRITE;
+/*!40000 ALTER TABLE `spell_ts_ability_index` DISABLE KEYS */;
+INSERT INTO `spell_ts_ability_index` VALUES
+(1,9001,3),
+(2,9002,6),
+(3,9003,6),
+(4,9004,0),
+(5,9005,6),
+(6,9006,3),
+(7,9007,5),
+(8,9008,0),
+(9,9009,3),
+(10,9010,0),
+(11,9011,2),
+(12,9012,3),
+(13,9013,5),
+(14,9014,4),
+(15,9015,2),
+(16,9016,1),
+(17,9017,5),
+(18,9018,3),
+(19,9019,5),
+(20,9020,2),
+(21,9021,4),
+(22,9022,2),
+(23,9023,2),
+(24,9024,1),
+(25,9025,4),
+(26,9026,6),
+(27,9027,5),
+(28,9028,2),
+(29,9029,0),
+(30,9030,4),
+(31,9031,0),
+(32,9032,2),
+(33,9033,1),
+(34,9034,1),
+(35,9035,6),
+(36,9036,5),
+(37,9037,6),
+(38,9038,5),
+(39,9039,1),
+(40,9040,6),
+(41,9041,4),
+(42,9042,1),
+(43,9043,1),
+(44,9044,6),
+(45,9045,5),
+(46,9046,2),
+(47,9047,6),
+(48,9048,6),
+(49,9049,5),
+(50,9050,6),
+(51,9051,4),
+(52,9052,4),
+(53,9053,1),
+(54,9054,5),
+(55,9055,5),
+(56,9056,6),
+(57,9057,3),
+(58,9058,2),
+(59,9059,2),
+(60,9060,3),
+(61,9061,5),
+(62,9062,3),
+(63,9063,0),
+(64,9064,3),
+(65,9065,6),
+(66,9066,3),
+(67,9067,2),
+(68,9068,1),
+(69,9069,5),
+(70,9070,1),
+(71,9071,1),
+(72,9072,1),
+(73,9073,1),
+(74,9074,3),
+(75,9075,4),
+(76,9076,4),
+(77,9077,5),
+(78,9078,6),
+(79,9079,4),
+(80,9080,4),
+(81,9081,2),
+(82,9082,2),
+(83,9083,4),
+(84,9084,6),
+(85,9085,3),
+(86,9086,2),
+(87,9087,4),
+(88,9088,5),
+(89,9089,4),
+(90,9090,3),
+(91,9091,0),
+(92,9092,1),
+(93,9093,1),
+(94,9094,2),
+(95,9095,3),
+(96,9096,4);
+/*!40000 ALTER TABLE `spell_ts_ability_index` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2025-09-27  0:00:50
+
+SET FOREIGN_KEY_CHECKS=1;
