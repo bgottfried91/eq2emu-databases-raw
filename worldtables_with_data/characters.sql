@@ -34,6 +34,7 @@ CREATE TABLE `characters` (
   `name` varchar(64) NOT NULL DEFAULT '',
   `race` tinyint(3) unsigned NOT NULL DEFAULT 0,
   `class` tinyint(3) unsigned NOT NULL DEFAULT 0,
+  `adventure_class` tinyint(3) unsigned NOT NULL DEFAULT 0,
   `gender` tinyint(3) unsigned NOT NULL DEFAULT 0,
   `deity` tinyint(3) unsigned NOT NULL DEFAULT 0,
   `body_size` float NOT NULL DEFAULT 0,
